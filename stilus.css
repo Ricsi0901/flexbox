@@ -1,10 +1,26 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 2021.02.10., 9:53:56
-    Author     : Ricsi
-*/
+@charset "UTF-8";
+body{background-color: gray}
 
+main{
+    background-color: chocolate;
+}
+
+main,header,nav, footer,article{
+    border: 1px solid gray;
+    padding: 5px;
+    box-sizing: border-box;
+}
+header, nav,footer,article{
+    background: white;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+header,nav,footer{
+    flex: 0 0 100%;
+}
+article{
+    width: 33.333333%;
+}
